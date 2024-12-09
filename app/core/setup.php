@@ -22,11 +22,18 @@ define('DB2PORT', $env['DB2PORT']);
 define('DB2USER', $env['DB2USER']);
 define('DB2PASS', $env['DB2PASS']);
 
-// Define constants for the second database (website users)
+// Define constants for the third database (website users)
 define('DB3NAME', $env['DB3NAME']);
 define('DB3HOST', $env['DB3HOST']);
 define('DB3PORT', $env['DB3PORT']);
 define('DB3USER', $env['DB3USER']);
 define('DB3PASS', $env['DB3PASS']);
+
+//heroku
+define('DBNAME', $env['DBNAME']);
+define('DBHOST', $env['DBHOST']);
+define('DBPORT', $env['DBPORT']);
+define('DBUSER', $env['DBUSER']);
+define('DBPASS', $env['DBPASS']);
 
 define('DEBUG', true);
