@@ -1,10 +1,14 @@
 <?php
 session_start(); 
-$env = parse_ini_file('../.env');
-if (!$env) {
-    die("Error: Unable to load .env file.");
+// $env = parse_ini_file('../.env');
+// if (!$env) {
+//     die("Error: Unable to load .env file.");
+// }
+// $apiKey = $env['APIKEY'];
+$apiKey = isset($_SERVER['APIKEY']) ? $_SERVER['APIKEY'] : null;
+if (!$apiKey) {
+    die("Error: API key is not set in environment variables.");
 }
-$apiKey = $env['APIKEY'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
