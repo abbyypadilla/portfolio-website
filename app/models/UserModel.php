@@ -9,9 +9,9 @@ class UserModel
 
     public function __construct()
     {
-        $dsn = 'mysql:host=' . DBHOST . ';dbname=' . DBNAME;
-        $username = DBUSER;
-        $password = DBPASS;
+        $dsn = 'mysql:host=' . getenv('DBHOST') . ';dbname=' . getenv('DBNAME');
+        $username = getenv('DBUSER');
+        $password = getenv('DBPASS');
         $options = [
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,  
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC, 
