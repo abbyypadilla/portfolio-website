@@ -9,10 +9,10 @@ class PortfolioModel {
     private $db;
 
     public function __construct() {
-        $dbHost = DB1HOST;
-        $dbUser = DB1USER;   
-        $dbPass = DB1PASS;
-        $dbName = DB1NAME;
+        $dbHost = DBHOST;
+        $dbUser = DBUSER;   
+        $dbPass = DBPASS;
+        $dbName = DBNAME;
 
         try {
             $this->db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);

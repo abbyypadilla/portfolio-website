@@ -10,7 +10,7 @@ class ContactModel {
     private $db;
 
     public function __construct() {
-        $this->db = new Database(DB2HOST, DB2USER, DB2PASS, DB2NAME, DB2PORT);  
+        $this->db = new Database(DBHOST, DBUSER, DBPASS, DBNAME, DBPORT);  
     }
 
     public function saveContact($name, $email, $message) {

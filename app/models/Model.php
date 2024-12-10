@@ -19,8 +19,8 @@ class Model {
     // Connect to the first database (portfolio)
     private function connectToDB1() {
         try {
-            $dsn = "mysql:host=" . DB1HOST . ";port=" . DB1PORT . ";dbname=" . DB1NAME;
-            $db = new PDO($dsn, DB1USER, DB1PASS);
+            $dsn = "mysql:host=" . DBHOST . ";port=" . DBPORT . ";dbname=" . DBNAME;
+            $db = new PDO($dsn, DBUSER, DBPASS);
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $db;
         } catch (\Exception $e) {
@@ -31,8 +31,8 @@ class Model {
     // Connect to the second database (contact messages)
     private function connectToDB2() {
         try {
-            $dsn = "mysql:host=" . DB2HOST . ";port=" . DB2PORT . ";dbname=" . DB2NAME;
-            $db = new PDO($dsn, DB2USER, DB2PASS);
+            $dsn = "mysql:host=" . DBHOST . ";port=" . DBPORT . ";dbname=" . DBNAME;
+            $db = new PDO($dsn, DBUSER, DBPASS);
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $db;
         } catch (\Exception $e) {
@@ -43,8 +43,8 @@ class Model {
     // Connect to the third database (contact messages)
     private function connectToDB3() {
         try {
-            $dsn = "mysql:host=" . DB3HOST . ";port=" . DB3PORT . ";dbname=" . DB3NAME;
-            $db = new PDO($dsn, DB3USER, DB3PASS);
+            $dsn = "mysql:host=" . DBHOST . ";port=" . DBPORT . ";dbname=" . DBNAME;
+            $db = new PDO($dsn, DBUSER, DBPASS);
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $db;
         } catch (\Exception $e) {
